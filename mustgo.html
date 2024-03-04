@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Must go</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("places.jpg");
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+            overflow: scroll;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            h1 {
+                color: white;
+                font-family: "Papyrus", fantasy;
+            }
+    }
+
+    * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+    ::-webkit-scrollbar {
+    width: 20px;
+    }
+        ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+    }
+        ::-webkit-scrollbar-thumb {
+    background: border-box; 
+    border-radius: 10px;
+    }
+        ::-webkit-scrollbar-thumb:hover {
+    background: black;
+    }
+
+        .container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+    <h1>Must go places in Japan</h1><br><br>
+    <div class="row">
+        <div class="column">
+    <div class="container">
+        <img src="mountfuji.jpg" alt="Mount Fuji" class="image">
+        <div class="overlay">
+          <div class="text">Mount Fuji</div>
+        </div>
+    </div>
+      </div>
+      <div class="column">
+      <div class="container">
+        <img src="tokyotower.jpg" alt="Tokyo Tower" class="image">
+        <div class="overlay">
+          <div class="text">Tokyo Tower</div>
+        </div>
+    </div>
+      </div>
+      <div class="column">
+      <div class="container">
+        <img src="tokyoskytree.jpg" alt="Tokyo Skytree" class="image">
+        <div class="overlay">
+          <div class="text">Tokyo Skytree</div>
+        </div>
+    </div>
+      </div><br>
+      <div class="column">
+      <div class="container">
+        <img src="tokyodisneyland.jpg" alt="Tokyo Disneyland" class="image">
+        <div class="overlay">
+          <div class="text">Tokyo Disneyland</div>
+        </div>
+    </div>
+      </div><br>
+      <div class="column">
+      <div class="container">
+        <img src="osakacastle.jpg" alt="Osaka Castle" class="image">
+        <div class="overlay">
+          <div class="text">Osaka Castle</div>
+        </div>
+    </div>
+      </div><br>
+      <div class="column">
+      <div class="container">
+        <img src="tempozan.jpg" alt="Tempozan Giant Ferris Wheel" class="image">
+        <div class="overlay">
+          <div class="text">Tempozan Giant Ferris Wheel</div>
+        </div>
+    </div>
+      </div><br>
+      <div class="column">
+      <div class="container">
+        <img src="univstudios.jpg" alt="Universal Studios Japan" class="image">
+        <div class="overlay">
+          <div class="text">Universal Studios Japan</div>
+        </div>
+    </div>
+      </div><br>
+      <div class="column">
+      <div class="container">
+        <img src="aquarium.jpg" alt="Osaka Aquarium Kaiyukan" class="image">
+        <div class="overlay">
+          <div class="text">Osaka Aquarium Kaiyukan</div>
+        </div>
+    </div>
+      </div><br>
+      <div class="column">
+      <div class="container">
+        <img src="ginza.jpg" alt="Ginza" class="image">
+        <div class="overlay">
+          <div class="text">Ginza</div>
+        </div>
+    </div>
+      </div><br>
+      <div class="column">
+      <div class="container">
+        <img src="shinjuku.jpg" alt="Shinjuku Gyoen" class="image">
+        <div class="overlay">
+          <div class="text">Shinjuku Gyoen</div>
+        </div>
+    </div>
+      </div><br>
+      </body>
+      </html>

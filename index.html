@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home - Ryoko</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      #more {display: none;}
+
+        ::-webkit-scrollbar {
+    width: 20px;
+    }
+        ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+    }
+        ::-webkit-scrollbar-thumb {
+    background: border-box; 
+    border-radius: 10px;
+    }
+        ::-webkit-scrollbar-thumb:hover {
+    background: #F08F90; 
+    }
+
+        a:link, a:visited {
+    background-color: transparent;
+    color: white;
+    padding: 14px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    }
+
+        a:hover, a:active {
+    background-color: purple;
+    }
+
+.collapsible {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: gainsboro;
+  opacity: 0.7;
+}
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("japan.jpg");
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+            overflow: scroll;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            h1 {
+                color: white;
+                font-family: "Papyrus", fantasy;
+            }
+            h4 {
+                color: white;
+                font-family: "Papyrus", fantasy;
+            }
+            p {
+                color: black;
+            }
+        }
+        </style>
+        </head>
+        <body>
+            <a href="index.html" target="_top">Home</a>
+            <a href="tips.html" target="_top">Travel tips</a>
+            <a href="destinationguide.html" target="_top">Destination guide</a>
+            <a href="checklist.html" target="_top">Packing checklist</a>
+            <a href="japanese.html" target="_top">Instant Japanese</a>
+            <a href="mustgo.html" target="_top">Must go</a>
+            <a href="musteat.html" target="_top">Must eat</a>
+            <a href="contactus.html" target="_top">Contact us</a><br><br>
+            <h1>Welcome to Ryoko!</h1>
+            <h4>A Japan traveler's diary</h4>
+            <button onclick="myFunction1()">Get Started :)</button>
+            <br><br><br><br>
+            <button type="button" class="collapsible">What is Ryoko?</button>
+            <div class="content">
+            <p>"Ryoko" is a Japanese word which means travel. Like traveling? Discover and plan your perfect trip to Japan with expert advice, travel guides, destination information, packing checklists and more from Ryoko.</p></div>
+            <br>
+            <button type="button" class="collapsible">Some information about Japan</button>
+            <div class="content">
+            <p>Japan is an island country lying off the east coast of Asia. It consists of a great string of islands in a northeast-southwest arc that stretches for approximately 1,500 miles (2,400 km) through the western North Pacific Ocean. Nearly the entire land ar<span id="dots">...</span><span id="more">ea is taken up by the country’s four main islands; from north to south. These are Hokkaido, Honshu , Shikoku, and Kyushu. Honshu is the largest of the four, followed in size by Hokkaido, Kyushu, and Shikoku. In addition, there are numerous smaller islands, the major groups of which are the Ryukyu (Nansei) Islands (including the island of Okinawa) to the south and west of Kyushu and the Izu, Bonin (Ogasawara), and Volcano (Kazan) islands to the south and east of central Honshu. The national capital, Tokyo, in east-central Honshu, is one of the world’s most populous cities.</span></p><button onclick="myFunction()" id="myBtn">Read more</button></div>
+            <br>
+            <button type="button" class="collapsible">Why do we need a travel guide?</button>
+            <div class="content">
+            <p>A travel guide is required because it helps organize, manage and plan the whole trip for you so that you can just concentrate on enjoying the destination and leave everything else on it. You do not have to do any planning for the trip. It takes care of all the bookings and reservations to relieve you from all the stress.</p></div>
+            <br>
+            <button type="button" class="collapsible">Feeling lost?</button>
+            <div class="content">
+            <p>New to Japan? Don't worry, our website contains an "Instant Japanese" page as a bonus!</p></div>
+            <br>
+
+            <script>
+                function myFunction1() {
+  alert("to accept all cookies (don't worry, they're delicious!)");
+}
+
+                var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+                </script>
+        </body>
+        </html> 
